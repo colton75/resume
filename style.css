@@ -8,7 +8,7 @@ p {
 }
 
 h3 {
-    margin-bottom: 50px;
+    margin: 50px 0px;
 }
 
 .top-container {
@@ -35,16 +35,6 @@ h1 {
 .tagline {
     font-size: 3rem;
 }
-
-@media only screen and (max-width: 741px) {
-    h1 {
-      font-size: 4rem;
-    }
-
-    .tagline {
-        font-size: 1.5rem;
-    }
-  }
 
 #about-container {
     padding: 3% 13%;
@@ -142,6 +132,12 @@ h1 {
     float: right;
 }
 
+.mobile-img {
+    display: none;
+    width: 150px;
+    margin: auto;
+}
+
 #skills-container {
     padding: 3% 13%;
 }
@@ -162,6 +158,7 @@ h1 {
 }
 
 #contact-container {
+    margin-top: 50px;
     padding: 1% 13%;
     text-align: center;
     background-color: aqua;
@@ -176,3 +173,34 @@ h1 {
     color: black;
     padding: 2%;
 }
+
+
+@media only screen and (max-width: 741px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .tagline {
+        font-size: 1.3rem;
+    }
+
+    .top-container, #about-container, #education-container, #projects-container, #skills-container, #contact-container {
+        padding: 1% 10%;
+    }
+
+    .default-profile {
+        width: 280px;
+    }
+
+    .left, .right {
+        display: none;
+    }
+
+    .project-row {
+        text-align: center;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+  }
