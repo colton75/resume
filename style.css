@@ -28,9 +28,23 @@ h3 {
 h1 {
     font-family: 'Doppio One', sans-serif;
     font-weight: bold;
-    font-size: 8rem;
+    font-size: 6rem;
     letter-spacing: 0.5rem;
 }
+
+.tagline {
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 741px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+    }
+  }
 
 #about-container {
     padding: 3% 13%;
@@ -39,10 +53,7 @@ h1 {
 
 .default-profile {
     border-radius: 100%;
-}
-
-.default-profile {
-    width: 30%;
+    width: 350px;
 }
 
 #education-container {
@@ -53,8 +64,43 @@ h1 {
     background-color: #48dbfb;
 }
 
-.education-table th, .education-table  td {
+.table th, .table  td {
     padding: 30px 10px;
+}
+
+@media only screen and (max-width: 760px) {
+    .table table, .table thead, .table tbody, .table th, .table td, .table tr {
+        display: block;
+    }
+
+    .table thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table td {
+        position: relative;
+        padding: 20px 0;
+        padding-left: 50%;
+    }
+
+    .table tr:nth-child(odd) {
+        background: #48dbfb;
+    }
+
+    .table td::before {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        white-space: nowrap;
+    }
+
+    .table td:nth-of-type(1):before {content: "Qualification";}
+    .table td:nth-of-type(2):before {content: "College";}
+    .table td:nth-of-type(3):before {content: "Board";}
+    .table td:nth-of-type(4):before {content: "Year of Passing";}
+    .table td:nth-of-type(5):before {content: "Percentage";}
 }
 
 #projects-container {
@@ -100,8 +146,23 @@ h1 {
     padding: 3% 13%;
 }
 
+.skill {
+    padding: 1.5%;
+    border-top: 1px solid #dee2e6;
+}
+
+
+.skill-name {
+    display: inline-block;
+    width: 50%;
+}
+
+.stars {
+    display: inline-block;
+}
+
 #contact-container {
-    padding: 3% 13%;
+    padding: 1% 13%;
     text-align: center;
     background-color: aqua;
 }
@@ -109,4 +170,9 @@ h1 {
 .contact-link {
     text-decoration: none;
     font-weight: bold;
+}
+
+.fa-envelope {
+    color: black;
+    padding: 2%;
 }
