@@ -167,11 +167,12 @@ h1 {
 .contact-link {
     text-decoration: none;
     font-weight: bold;
-}
-
-.fa-envelope {
     color: black;
     padding: 2%;
+}
+
+.icon-links {
+    margin-bottom: 20px;
 }
 
 
